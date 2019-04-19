@@ -37,11 +37,11 @@ class LitecoinSpider(scrapy.Spider):
 # https://stackabuse.com/how-to-send-emails-with-gmail-using-python/
 def send_mail(message):
     print('SEND EMAIL')
-    gmail_user = 'jonasscrapy@gmail.com'  
-    gmail_password = 'taki2020'
+    gmail_user = ''  
+    gmail_password = ''
     
-    sent_from = 'jonasscrapy@gmail.com'  
-    to = ['ferreirajonasss@gmail.com']  
+    sent_from = ''  
+    to = ['']  
     message = 'Preço do Litecoin'  
     
     try:  
