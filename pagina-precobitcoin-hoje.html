@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1, width=device-width">
+<title>Bitcoin Hoje: Cotação, Valor e Preço!</title>
+<link rel="icon" type="image/x-icon" href="/img/bitcoin.ico" />
+
+
+<meta name="apple-mobile-web-app-title" content="Bitcoin Hoje">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link rel="apple-touch-icon-precomposed" href="/img/apple-bitcoin.png">
+<link rel="icon" sizes="192x192" href="/img/touch-bitcoin.png">
+<meta name="theme-color" content="#FFE683"/>
+<meta name="msapplication-navbutton-color" content="#FFE683"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="#FFE683"/>
+
+
+
+
+
+
+<meta name="description" content="Valor da cotação do Bitcoin hoje. Preço do Bitcoin sempre atualizado." />
+<meta name="keywords" content="bitcoin hoje,cotação,preço,valor" />
+<meta name="author" content="PedroMenezes.com" />
+
+
+<meta property='og:type' content='website'>
+
+<meta property="og:site_name" content="Dólar Hoje">
+<meta property='og:title' content='Bitcoin Hoje'>
+<meta property='og:url' content='https://dolarhoje.com/bitcoin'>
+<meta property='og:image' content='https://dolarhoje.com/img/fb-icon.gif'>
+<meta property='og:description' content='Saiba a cotação do bitcoin hoje.'>
+
+
+
+<meta property='twitter:site' content='@dolarhoje'>
+
+<link rel="canonical" href="https://dolarhoje.com/bitcoin-hoje/"/>
+
+<link rel="alternate" type="application/rss+xml" title="Dólar Hoje RSS Feed" href="//dolarhoje.com/feed.xml"/>
+
+<style type="text/css">
+*{margin:0;padding:0}
+html{height:auto;}
+
+html,body {min-height: 100%;}
+
+body{background:#fff url(/img/d.gif) repeat-x top left;font:62.5% Verdana;text-align:center}
+a{color:#3398CB}
+
+#conteudo ul, #conteudo ol { margin-left: 17px; }
+#conteudo ul li, #conteudo ol li { margin-left: 15px; margin-top: 10px; }
+
+ul.menu{list-style-type: none; margin-left: initial; text-align: left;}
+ul.menu > li{border-bottom: 1px solid #eee; margin-top: initial; padding: 15px 0 8px 0;}
+#conteudo ul.menu > li { margin-left: initial; }
+
+.highlight{color: #000; display: inline-block;padding: 1px 5px}
+.highlight.dolar{background: #F58A8A}
+.highlight.real{background: #A0D229}
+
+#topo, #conteudo { font-size: 1.2em; margin: 2% 25px 30px 25px; }
+
+#conteudo .google-auto-placed {text-align: left !important;}
+
+#topo p { margin-top: 30px; text-align: left; }
+#topo p:first-child {margin-top: 0;}
+#topo a {text-decoration: none;}
+
+
+#breadcrumb > ol {list-style-type: none; margin-left: 0}
+#dropdown-content > ul {list-style-type: none; margin-top: 8px;}
+#dropdown-content > ul > li.selected > a { color: #000; }
+#dropdown-content > ul > li.header > span {  font-weight: bold; text-transform: uppercase; }
+#breadcrumb > ol > li > a, #breadcrumb > ol > li > span.selected-page {display: none;}
+#breadcrumb ul.menu:last-child li:first-child, #breadcrumb ul.menu:nth-child(2n) li:first-child {display: none;}
+
+#breadcrumb .arrow {fill: #353535; margin-left: 3px; position: relative; top: 3px;}
+
+
+
+@media(min-width: 641px) {
+  body.desktop #breadcrumb {}
+  body.desktop #breadcrumb > ol {margin-top: -4px}
+  body.desktop #breadcrumb > ol > li {display: inline-block; position: relative}
+  body.desktop #breadcrumb > ol > li:after {color: #989898; content: ">"; margin-left: 5px; display: inline-block; position: relative}
+  body.desktop #breadcrumb > ol > li:last-child:after {display: none;}
+  body.desktop #breadcrumb > ol > li > a, body.desktop #breadcrumb > ol > li > span.selected-page {color: #3398CB; display: inline-block; text-decoration: underline;}
+  body.desktop #breadcrumb > ol > li > span.selected-page {text-decoration: none;}
+  body.desktop #breadcrumb > ol > li > a:hover {text-decoration: underline;}
+  body.desktop #breadcrumb > ol > li:first-child > a {font-size: 15px;}
+
+  body.desktop #breadcrumb ul.menu > li {border-bottom: 0; display: block; margin-right: initial; padding: initial;}
+  body.desktop #breadcrumb ul.menu:last-child li:first-child, #breadcrumb ul.menu:nth-child(2n) li:first-child {display: block;}
+
+  body.desktop #dropdown-content.ready {display: none;}
+
+  body.desktop #breadcrumb > ol > li > #dropdown-content {
+    box-shadow: 0 0 5px 0 rgba(0,0,0,.3);
+    background-color: #f9f9f9;
+    left: -127px;
+    padding: 10px 3px;
+    position: absolute;
+    white-space: nowrap;
+    z-index: 1;
+  }
+
+  body.desktop #breadcrumb > ol > li:hover > #dropdown-content { display: block; }
+
+  body.desktop #dropdown-content > ul {display:inline-block; margin-top: initial; vertical-align:top;}
+  body.desktop #dropdown-content > ul > li {}
+  body.desktop #dropdown-content > ul > li.header > span {}
+  body.desktop #dropdown-content > ul > li:first-child {margin-top: 4px}
+  body.desktop #dropdown-content > ul > li:last-child {margin-bottom: 4px}
+
+  body.desktop #breadcrumb > ol > li > #dropdown-content > ul > li > a, body.desktop #breadcrumb > ol > li > #dropdown-content > ul > li.header > span { color: #000; margin-right: 18px; padding-left: 15px; text-decoration: none; }
+  body.desktop #breadcrumb > ol > li > #dropdown-content > ul > li > a { color: #3398CB; text-decoration: underline; }
+  body.desktop #breadcrumb > ol > li > #dropdown-content > ul > li > a:hover { text-decoration: underline; }
+
+  body.desktop #dropdown-content > ul > li.selected > a { color: #000 !important; text-decoration: none !important; }
+}
+
+
+.install{display:none;}
+.install a{text-decoration: none;}
+.is{display: block !important;}
+.has_extension{display:none !important;}
+
+.icon { background: url(/img/sprites.png) no-repeat; display: inline-block; }
+.icon.flag { background-position: -30px -5px; height: 17px; width: 20px; }
+.text { position: relative; top: -2px; }
+.icon.chrome { background-position: -63px -8px; height: 17px; width: 17px; }
+.icon.whatsapp { background-position: -33px -66px; height: 18px; padding-right: 3px; width: 16px; }
+.icon.telegram { background-position: -7px -63px; height: 21px; padding-right: 3px; width: 16px; }
+.icon.star { width: 27px; height: 26px; background-position: -102px -5px; background-size: 133px; margin-right: 4px; }
+.icon.star.full { background-position: -102px -39px; }
+
+#whatsapp-share-button, #telegram-share-button, #newsletter-top{display: none;}
+body.mobile #whatsapp-share-button, body.mobile #telegram-share-button, body.mobile #newsletter-top{display:block;}
+#newsletter-top{padding-left: 23px;}
+
+@media(min-width: 641px) { /* tablet */
+  body.mobile #whatsapp-share-button, body.mobile #telegram-share-button{display:none;}
+}
+
+#moeda { margin-top: 5%; }
+#moeda > ._adr_abp_iframe { display: none !important; }
+
+  h1 {background:transparent url(/img/icon-bitcoin.gif) no-repeat center center; background-size: 122px; height:122px; margin-right:auto; text-indent:-9999px;}
+  
+  #cotacao {color:#FF8000;font-size:2em;letter-spacing:.05em;word-spacing:-.3em;
+    margin: .7em .9em .5em .9em;
+    }
+  #cotacao .optional {display: none;}
+  #cotacao .clearfix {clear:both;height:0}
+  .cotMoeda { color: #c8c8c8; font-size:3em; margin: 0 .1em; padding: 0 0.07em 0.03em; float: left; clear: left; font-size:1.4em; }
+  .cotMoeda:first-child { margin-bottom: .3em; margin-top: .3em; }
+  .cotMoeda input {outline:0;}
+  .cotMoeda .symbol { display: inline-block; text-align: left; width: 2.1em; }
+  input#estrangeiro,input#nacional{border:0;color:#999;font-family:verdana;font-size:1em;margin-left:0.1em;text-align:right;width:2.3em;-webkit-transition: all 0.3s ease-in-out;-moz-transition: all 0.3s ease-in-out;-o-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out;}
+
+
+.twitter{display:inline;position:relative;top: 3px;}
+
+#conteudo {text-align:left;}
+#conteudo, #conteudo a {color:#5a5a5a;}
+#conteudo h2 {font-size: 1.3em;}
+#conteudo h2, #conteudo strong {color: #616161;}
+#conteudo h2:first-of-type {margin-top: 20px;}
+#conteudo h2:not(:first-of-type) {margin-top: 50px;}
+#conteudo p {line-height: 21px; margin: 16px 0;}
+#conteudo ul.menu {margin-top:30px;margin-left:0}
+
+table.conversao {border-collapse: collapse; margin-bottom: 10px; margin-top: 16px; width: 100%;}
+
+thead tr td {background: #4CAF50; color: #fff; vertical-align: bottom;}
+table.conversao.australiano thead tr td {background: #3E2782;}
+table.conversao.neo thead tr td, table.conversao.siacoin thead tr td {}
+table.conversao.canadense thead tr td {background: #E20026;}
+table.conversao.euro thead tr td, table.conversao.electroneum thead tr td, table.conversao.dash thead tr td, table.conversao.populous thead tr td, table.conversao.zilliqa thead tr td, table.conversao.digibyte thead tr td, table.conversao.wanchain thead tr td, table.conversao.bitshares thead tr td, table.conversao.status thead tr td, table.conversao.decred thead tr td, table.conversao.lisk thead tr td, table.conversao.omisego thead tr td, table.conversao.nano thead tr td, table.conversao.vechain thead tr td, table.conversao.ontology thead tr td, table.conversao.verge thead tr td, table.conversao.stellar-lumens thead tr td, table.conversao.qtum thead tr td, table.conversao.icon-coin thead tr td, table.conversao.stratis thead tr td, table.conversao.waves thead tr td, table.conversao.steem thead tr td, table.conversao.usd-coin thead tr td, table.conversao.trueusd thead tr td {background: #3398CB;}
+table.conversao.libra thead tr td {background: #e0596a;}
+table.conversao.aeternity thead tr td {background: #d03c70;}
+table.conversao.ouro thead tr td, table.conversao.zcash thead tr td, table.conversao.dogecoin thead tr td {background: #caac66;}
+table.conversao.bitcoin thead tr td, table.conversao.nem thead tr td {background: #fef0db;color: #999;}
+table.conversao.iene thead tr td, table.conversao.mexicano thead tr td, table.conversao.franco-suico thead tr td, table.conversao.neozelandes thead tr td, table.conversao.basic-attention-token thead tr td, table.conversao.yuan thead tr td, table.conversao.rublo thead tr td,table.conversao.novo-sol thead tr td, table.conversao.reddcoin thead tr td, table.conversao.ark thead tr td, table.conversao.won thead tr td {background: #e63331;}
+table.conversao.litecoin thead tr td, table.conversao.ripple thead tr td, table.conversao.salt thead tr td, table.conversao.zrx thead tr td, table.conversao.bytom thead tr td, table.conversao.ethereum thead tr td, table.conversao.iota thead tr td, table.conversao.cardano thead tr td, table.conversao.tron thead tr td, table.conversao.eos thead tr td, table.conversao.bytecoin thead tr td, table.conversao.golem thead tr td, table.conversao.pundi-x thead tr td, table.conversao.tezos thead tr td {background: #A4A4A4;color: #fff;}
+table.conversao.monero thead tr td {background: #f7e8de; color: #969696;}
+table.conversao.argentino thead tr td {background: #5CA8DA;}
+table.conversao.chileno thead tr td {background: #E51212;}
+table.conversao.uruguaio thead tr td {background: #0237AB;}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+td {border-bottom: 1px solid #ddd; font-size: 15px; height: auto; max-height: 30px; padding: 10px; vertical-align: center;}
+
+/* input */
+
+
+  /* celulares */
+  .cotMoeda input {min-width: 3.9em; max-width: 3.9em;}
+  
+
+  @media(min-width: 239px) {
+    .cotMoeda input {min-width: 4.6em; max-width: 4.6em;}
+    
+  }
+
+  @media(min-width: 299px) {
+    .cotMoeda{font-size: 1.8em}
+    .cotMoeda input { min-width: 4.7em; max-width: 4.7em; }
+    
+  }
+
+  @media(min-width: 319px) {
+    .cotMoeda input { min-width: 5.3em; max-width: 5.3em; }
+    
+  }
+
+  @media(min-width: 359px) {
+    .cotMoeda{font-size: 2em}
+    .cotMoeda input { min-width: 5.5em; max-width: 5.5em; }
+    
+  }
+
+
+
+  /* ativado e mobile */
+  body.activated .cotMoeda, .cotMoeda { color: #c8c8c8; }
+  body.activated .cotMoeda, body.activated .cotMoeda input, .cotMoeda, .cotMoeda input { background: #FEF0DB; }
+
+
+
+
+
+/* desktop */
+  @media(min-width: 641px) {
+    .cotMoeda { color: #c8c8c8; }
+    
+    .cotMoeda, input#estrangeiro, input#nacional { background: transparent; }
+  }
+
+
+/* adsense */
+.adsbygoogle:not([data-ad-format='auto']) {
+  height: 60px;
+  margin: 0 0 0 25px;
+  width: 168px;
+}
+
+.adsbygoogle.digitais:not([data-ad-format='auto']) {
+  margin: 20px 0 0 0 !important;
+}
+
+@media(min-width: 239px) {
+  .adsbygoogle:not([data-ad-format='auto']) {
+    height: 60px;
+    width: 189px;
+  }
+}
+
+@media(min-width: 320px) {
+  .adsbygoogle:not([data-ad-format='auto']) {
+    height: 250px;
+    margin: 0 0 0 12px;
+    width: 300px;
+  }
+}
+
+@media(min-width: 360px) {
+  .adsbygoogle:not([data-ad-format='auto']) {
+    margin: 0 0 0 25px;
+  }
+}
+
+@media(min-width: 641px) {
+  .adsbygoogle:not([data-ad-format='auto']) {
+    margin: 1.5% auto 0 auto !important;
+    height: 60px;
+    width: 468px;
+  }
+
+  #custom-prop {
+    margin-top: 1.5%;
+  }
+
+  #custom-prop .adsbygoogle:not([data-ad-format='auto']) {
+    margin-top: 0;
+  }
+}
+
+@media(min-width: 728px) {
+  .adsbygoogle:not([data-ad-format='auto']) {
+    height: 90px;
+    width: 728px;
+  }
+}
+
+@media(min-width: 970px) {
+  .adsbygoogle {
+    width: 970px;
+  }
+}
+
+@media(min-width: 1040px) {
+  .adsbygoogle.rodape:not([data-ad-format='auto']) {
+    height: 250px;
+    width: 970px;
+  }
+}
+
+.adsbygoogle.conteudo:not([data-ad-format='auto']) {
+  margin: 0 !important;
+}
+
+.adsbygoogle.rodape:not([data-ad-format='auto']) {
+  margin: 5% 0 0 0 !important;
+}
+
+body.desktop .adsbygoogle.digitais:not([data-ad-format='auto']) {
+  display: none !important;
+}
+
+/* ajustes para ios e celulares */
+@media(min-width: 360px) {
+  #topo, #conteudo {
+    font-size: 1.4em;
+  }
+
+  ul.menu > li { padding-bottom: 9px; }
+}
+
+/* ajustes para ipad e desktop */
+@media(min-width: 641px) {
+  #moeda { margin-top: 10%; }
+
+  #cotacao { font-size: 1.2em; margin-top: 4%; }
+  #cotacao .optional{display: inline;}
+
+  
+    .cotMoeda {float: none; clear: none; font-size:3em;}
+    .cotMoeda input, .cotMoeda input#estrangeiro {min-width: 0; max-width: none}
+    .cotMoeda .symbol {width: auto;}
+    .cotMoeda:first-child { margin: 0 .1em; }
+  
+
+  body.desktop ul.menu > li {border-bottom: 0; display: inline; margin-right: .7em; padding: 0;}
+  body.desktop ul.menu > li:last-child {margin-right: 0;}
+
+  body.desktop #topo {position: absolute; left: 10px; margin: 0; padding-top: 0; top: 10px; width: auto}
+  body.desktop #topo a{text-decoration: underline;}
+  body.desktop #topo .install a{text-decoration:none;}
+  body.desktop #topo p {margin-top: 7px}
+  body.desktop #topo ul { line-height: 22px; }
+
+  body.desktop #conteudo { left: 10px; max-width: 550px; position: absolute; right: 10px; top: 101%; }
+  body.desktop #conteudo ul.menu {}
+  body.desktop #conteudo ul.menu > li { padding-bottom: 10px }
+
+  body.mobile #topo { margin-top: 28%; }
+}
+
+@media(min-width: 780px) {
+  #cotacao { font-size: 1.4em }
+}
+
+@media(min-width: 880px) {
+  #cotacao { font-size: 1.6em }
+}
+
+@media(min-width: 1020px) {
+  #cotacao { font-size: 2em; }
+}
+
+
+#topo ul.menu > li#breadcrumb { border-bottom: 0; }
+
+
+
+</style>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1639559-7"></script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1639559-7', { 'anonymize_ip': true });
+</script>
+
+
+
+  
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-2647271778569712",
+      enable_page_level_ads: true
+    });
+  </script>
+
+
+
+  
+    
+
+      
+      <script async="async" type="text/javascript" src="https://static.criteo.net/js/ld/publishertag.js"></script>
+
+      <script>
+          window.Criteo = window.Criteo || {};
+          window.Criteo.events = window.Criteo.events || [];
+
+          function crto_ShorterThan(widthMax){ return screen.width < widthMax; }
+
+          var zoneId = 1355136;
+          if (crto_ShorterThan(970)) {
+            zoneId = 1355137;
+          }
+          if (crto_ShorterThan(728)) {
+            zoneId = 1355135;
+          }
+
+          Criteo.events.push(function() {
+            var adUnit = {
+                "placements": [
+                  {
+                      "slotid": "custom-prop",
+                      "zoneId": zoneId
+                  }
+                ]
+            }
+            Criteo.Passback.RequestBids(adUnit, 1500);
+          });
+      </script>
+      
+    
+  
+
+</head>
+
+<body>
+
+
+  <div id="moeda"><h1>Bitcoin Hoje</h1></div>
+
+
+
+  
+  <div id="cotacao"><span class="cotMoeda estrangeira"><span class="symbol">฿</span><input type="text" id="estrangeiro" value="1,00"/></span><span class="optional"> vale </span><span class="cotMoeda nacional"><span class="symbol">R$</span><input type="text" id="nacional" value="21067,28"/></span><span class="optional"> hoje</span><br class="clearfix"/></div>
+  
+
+
+
+  
+  <div id="custom-prop">
+    <script type="text/javascript">
+      Criteo.events.push(function() {
+        Criteo.Passback.RenderAd('custom-prop', function(adunit){
+          console.log('passback for adunit:',adunit)
+
+            var div = document.getElementById(adunit);
+            var ad = document.createElement('ins');
+            ad.className = 'adsbygoogle principal';
+            ad.setAttribute('style', 'display:block');
+            ad.setAttribute('id', '123');
+            
+            ad.setAttribute('data-ad-client', 'ca-pub-2647271778569712');
+            ad.setAttribute('data-ad-slot', '6414851583');
+            
+            div.appendChild(ad);
+            (adsbygoogle = window.adsbygoogle || []).push({});
+
+            
+            var script = document.createElement('script');
+            script.src = '//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
+            script.async = 'async';
+            document.getElementsByTagName('head')[0].appendChild(script);
+            
+        });
+      });
+  </script>
+  </div>
+  
+ 
+
+
+  <div id="topo">
+    <ul class="menu">
+      <li id="whatsapp-share-button"><a href="whatsapp://send?text=O%20Bitcoin%20tá%20R$%2021067,28!%20DolarHoje.com/bitcoin" rel="nofollow"><span class="icon whatsapp"></span> Compartilhar no WhatsApp</a></li>
+
+      <li id="telegram-share-button"><a href="/telegram/" rel="nofollow" target="_blank"><span class="icon telegram"></span> Receber as cotações no Telegram</a></li>
+
+      <li id="newsletter-top"><a href="https://feedburner.google.com/fb/a/mailverify?uri=dolarhojepontocom&amp;loc=pt_BR" rel="nofollow" target="_blank">Receber via Email</a></li>
+
+      <li id="breadcrumb">
+        <ol>
+          <li><a href="/">DolarHoje.com</a></li>
+          <li><span class="selected-page">Bitcoin Hoje</span>
+            <div id="dropdown-content">
+              <ul class="menu">
+                <li class="header"><span>Convencionais</span></li>
+                <li><a href="/" title="cotação do dólar americano hoje">Dólar</a></li>
+                <li><a href="/dolar-australiano-hoje/" title="cotação do dólar australiano hoje">Dólar Australiano</a></li>
+                <li><a href="/dolar-canadense-hoje/" title="cotação do dólar canadense hoje">Dólar Canadense</a></li>
+                <li><a href="/dolar-neozelandes-hoje/" title="cotação do dólar neozelandês hoje">Dólar Neozelandês</a></li>
+                <li><a href="/euro-hoje/" title="cotação do euro hoje">Euro</a></li>
+                <li><a href="/franco-suico-hoje/" title="cotação do frnaco suíço hoje">Franco Suíço</a></li>
+                <li><a href="/iene/" title="cotação do iene hoje">Iene</a></li>
+                <li><a href="/libra-hoje/" title="cotação da libra hoje">Libra</a></li>
+                <li><a href="/ouro-hoje/" title="cotação do ouro hoje">Ouro</a></li>
+                <li><a href="/novo-sol-hoje/" title="cotação do novo sol hoje">Novo Sol</a></li>
+                <li><a href="/peso-argentino/" title="cotação do peso argentino hoje">Peso Argentino</a></li>
+                <li><a href="/peso-chileno/" title="cotação do peso chileno hoje">Peso Chileno</a></li>
+                <li><a href="/peso-mexicano-hoje/" title="cotação do peso mexicano hoje">Peso Mexicano</a></li>
+                <li><a href="/peso-uruguaio/" title="cotação do peso uruguaio hoje">Peso Uruguaio</a></li>
+                  <li><a href="/rublo-russo-hoje/" title="cotação do rublo russo hoje">Rublo</a></li>
+                <li><a href="/won-sul-coreano-hoje/" title="cotação do won sul-coreano hoje">Won Sul-Coreano</a></li>
+                <li><a href="/yuan-hoje/" title="cotação do yuan hoje">Yuan</a></li>
+              </ul>
+
+              
+                
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                
+                <!-- bloco acima de digital -->
+                <ins class="adsbygoogle digitais"
+                    style="display:block"
+                    data-ad-client="ca-pub-2647271778569712"
+                    data-ad-slot="1858127681">
+                </ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+              
+
+              <ul class="menu">
+                <li class="header"><span>Digitais</span></li>
+                <li><a href="/aeternity-hoje/" title="cotação do aeternity hoje">Aeternity</a></li>
+                <li><a href="/ark-hoje/" title="cotação da ark hoje">ARK</a></li>
+                <li><a href="/basic-attention-token-hoje/" title="cotação do basic attention token hoje">Basic Attention Token</a></li>
+                <li class="selected"><a href="/bitcoin-hoje/" title="cotação do bitcoin hoje">Bitcoin</a></li>
+                <li><a href="/bitcoin-cash-hoje/" title="cotação do bitcoin cash hoje">Bitcoin Cash</a></li>
+                <li><a href="/bitcoin-diamond-hoje/" title="cotação do bitcoin diamond hoje">Bitcoin Diamond</a></li>
+                <li><a href="/bitcoin-gold-hoje/" title="cotação do bitcoin gold hoje">Bitcoin Gold</a></li>
+                <li><a href="/bitcoin-sv-hoje/" title="cotação do bitcoin sv hoje">Bitcoin SV</a></li>
+                <li><a href="/bitshares-hoje/" title="cotação da bitshares hoje">BitShares</a></li>
+                <li><a href="/bytecoin-hoje/" title="cotação do bytecoin hoje">Bytecoin</a></li>
+                <li><a href="/bytom-hoje/" title="cotação da bytom hoje">Bytom</a></li>
+                <li><a href="/cardano-hoje/" title="cotação do cardano hoje">Cardano</a></li>
+                <li><a href="/dash/" title="cotação do dash hoje">Dash</a></li>
+                <li><a href="/decred/" title="cotação do decred hoje">Decred</a></li>
+                <li><a href="/dentacoin-hoje/" title="cotação da dentacoin hoje">Dentacoin</a></li>
+                <li><a href="/digibyte-hoje/" title="cotação da digibyte hoje">DigiByte</a></li>
+                <li><a href="/dogecoin-hoje/" title="cotação do dogecoin hoje">Dogecoin</a></li>
+                <li><a href="/electroneum-hoje/" title="cotação da electroneum hoje">Electroneum</a></li>
+                <li><a href="/eos-hoje/" title="cotação do eos hoje">EOS</a></li>
+                <li><a href="/ethereum/" title="cotação do ethereum hoje">Ethereum</a></li>
+                <li><a href="/ethereum-classic-hoje/" title="cotação do ethereum classic hoje">Ethereum Classic</a></li>
+                <li><a href="/golem-hoje/" title="cotação do golem hoje">Golem</a></li>
+                <li><a href="/icon-hoje/" title="cotação do icon hoje">ICON</a></li>
+              </ul>
+
+              <ul class="menu">
+                <li class="header"><span></span></li>
+                <li><a href="/iota/" title="cotação do iota hoje">IOTA</a></li>
+                <li><a href="/komodo-hoje/" title="cotação da komodo hoje">Komodo</a></li>
+                <li><a href="/lisk/" title="cotação do lisk hoje">Lisk</a></li>
+                <li><a href="/litecoin/" title="cotação do litecoin hoje">Litecoin</a></li>
+                <li><a href="/monero/" title="cotação do monero hoje">Monero</a></li>
+                <li><a href="/nano-hoje/" title="cotação da nano hoje">Nano</a></li>
+                <li><a href="/nem/" title="cotação do nem hoje">NEM</a></li>
+                <li><a href="/neo/" title="cotação do neo hoje">NEO</a></li>
+                <li><a href="/omisego/" title="cotação do omisego hoje">OmiseGO</a></li>
+                <li><a href="/ontology-hoje/" title="cotação da ontology hoje">Ontology</a></li>
+                <li><a href="/populous-hoje/" title="cotação da populous hoje">Populous</a></li>
+                <li><a href="/pundi-x-hoje/" title="cotação da pundi x hoje">Pundi X</a></li>
+                <li><a href="/qtum-hoje/" title="cotação do qtum hoje">Qtum</a></li>
+                <li><a href="/reddcoin-hoje/" title="cotação do reddcoin hoje">ReddCoin</a></li>
+                <li><a href="/ripple-hoje/" title="cotação do ripple xrp hoje">Ripple XRP</a></li>
+                <li><a href="/salt-hoje/" title="cotação da salt hoje">SALT</a></li>
+                <li><a href="/siacoin-hoje/" title="cotação da siacoin hoje">Siacoin</a></li>
+                <li><a href="/status-hoje/" title="cotação da status hoje">Status</a></li>
+                <li><a href="/steem-hoje/" title="cotação da steem hoje">Steem</a></li>
+                <li><a href="/stellar-lumens-hoje/" title="cotação do stellar lumens hoje">Stellar Lumens</a></li>
+                <li><a href="/stratis-hoje/" title="cotação da stratis hoje">Stratis</a></li>
+                <li><a href="/tether-hoje/" title="cotação da tether hoje">Tether</a></li>
+                <li><a href="/tezos-hoje/" title="cotação da tezos hoje">Tezos</a></li>
+              </ul>
+
+              <ul class="menu">
+                <li class="header"><span></span></li>
+                <li><a href="/tron-hoje/" title="cotação do tron hoje">TRON</a></li>
+                  <li><a href="/trueusd-hoje/" title="cotação da trueusd hoje">TrueUSD</a></li>
+                <li><a href="/usd-coin-hoje/" title="cotação da usd coin hoje">USD Coin</a></li>
+                <li><a href="/vechain-hoje/" title="cotação da vechain hoje">VeChain</a></li>
+                <li><a href="/verge-hoje/" title="cotação do verge hoje">Verge</a></li>
+                <li><a href="/wanchain-hoje/" title="cotação da wanchain hoje">Wanchain</a></li>
+                <li><a href="/waves-hoje/" title="cotação da waves hoje">Waves</a></li>
+                <li><a href="/zcash/" title="cotação do zcash hoje">Zcash</a></li>
+                <li><a href="/zilliqa-hoje/" title="cotação do zilliqa hoje">Zilliqa</a></li>
+                <li><a href="/0x-hoje/" title="cotação da 0x hoje">0x</a></li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </li>
+    </ul>
+
+    
+    <p id="aviso_chrome" class="install">
+        <a href="https://chrome.google.com/webstore/detail/olpfnfcoflgpbbfhedielmmdacikbfhk" rel="nofollow" target="_blank">
+            <span class="icon chrome"></span>
+            <!-- icon by Anna Shlyapnikova (http://shlyapnikova.deviantart.com/) -->
+            Adicione ao Chrome
+        </a>
+    </p>
+    
+  </div>
+
+
+<div id="conteudo">
+
+                  
+    
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+    <!-- bloco responsivo conteúdo dolarhoje -->
+    <ins class="adsbygoogle conteudo"
+        style="display:block;"
+        data-ad-client="ca-pub-2647271778569712"
+        data-ad-slot="4356871987"
+        ></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  
+
+  
+
+  
+  <h2>Cotação do Bitcoin em Exchanges Brasileiras</h2><table class="conversao bitcoin">  <thead>    <tr>      <td>Exchange</td>      <td>Cotação</td>    </tr>  </thead>  <tbody>        <tr>      <td>Brabex</td>      <td>R$ 20819,03</td>    </tr>        <tr>      <td>3XBIT</td>      <td>R$ 20860,26</td>    </tr>        <tr>      <td>Ripio</td>      <td>R$ 20964,77</td>    </tr>        <tr>      <td>Kamoney</td>      <td>R$ 20966,00</td>    </tr>        <tr>      <td>Braziliex</td>      <td>R$ 21000,84</td>    </tr>        <tr>      <td>FlowBTC</td>      <td>R$ 21010,00</td>    </tr>        <tr>      <td>MODIAX</td>      <td>R$ 21013,03</td>    </tr>        <tr>      <td>Walltime</td>      <td>R$ 21051,00</td>    </tr>        <tr>      <td>OmniTrade</td>      <td>R$ 21085,10</td>    </tr>        <tr>      <td>BitPreço</td>      <td>R$ 21103,38</td>    </tr>        <tr>      <td>PitaiaTrade</td>      <td>R$ 21144,15</td>    </tr>        <tr>      <td>Mercado Bitcoin</td>      <td>R$ 21150,00</td>    </tr>        <tr>      <td>NovaDAX</td>      <td>R$ 21200,76</td>    </tr>        <tr>      <td>BrasilBitcoin</td>      <td>R$ 21210,00</td>    </tr>        <tr>      <td>BitcoinTrade</td>      <td>R$ 21220,00</td>    </tr>        <tr>      <td>e-juno</td>      <td>R$ 21302,95</td>    </tr>        <tr>      <td>CryptoMKT</td>      <td>R$ 21486,00</td>    </tr>        <tr>      <td>BitcoinToYou</td>      <td>R$ 21830,23</td>    </tr>      </tbody></table><small>Última atualização: 18/04/2019 16:30.</small><h2>O Bitcoin</h2><p>É uma criptomoeda e sistema de pagamento online baseado em um protocolo de código aberto e é independente de qualquer autoridade central. Um Bitcoin pode ser transferido por computadores e smartphones sem recurso a uma instituição financeira intermediária.</p><h2>Como funciona a cotação do Bitcoin hoje?</h2><p>O <strong>valor</strong> do Bitcoin é determinado pela oferta e procura. Ele possui uma quantidade limitada a ser produzida. Quanto maior a procura pelo Bitcoin, maior sua cotação. Ele tem sido bastante comprado como forma de diversificar seus investimentos, compras internacionais e transferências.</p><h2>Como o Bitcoin funciona?</h2><p>A partir do momento que você compra Bitcoins e os armazena em sua carteira virtual, pode transferir para a carteira de outra pessoa, empresa ou loja.</p><p>Essa transferência é feita através da tecnologia Blockchain, uma estrutura de dados que representa a contabilidade financeira ou registro de transações. Casa transação é assinada digitalmente para garantir autenticidade e que não haja adulterações.</p><h2>Por que comprar Bitcoin?</h2><p>Existem várias vantagens em utilizar Bitcoins, como por exemplo:</p><p><b>Poder transferir qualquer quantidade de dinheiro para qualquer lugar do mundo a qualquer hora</b>. Para isso, paga-se uma taxa a sua escolha aos mineradores que priorizarão a transferência de acordo com o valor da taxa. Pagando-se mais a transferência pode ser feita em poucos minutos, pagando-se menos pode demorar algumas horas. A confirmação da transferência pode ser acompanhada online.</p><p><b>Segurança de informação</b>. Sua carteira virtual fora das exchanges não possui nenhuma informação pessoal, o que garante certo anonimato. Só é possível rastrear de que carteira veio os Bitcoins e quantos são, mas não quem a possui.</p><p><b>Transparência de informações</b>. As informações de transferências são públicas. Tanto a quantidade de Bitcoins transferidos quanto qual carteira transferiu para qual carteira. Não é possível manipular essas informações devido a seu forte algoritmo de criptografia.</p><p><b>Isenção de taxas a instituições</b>. A partir do momento que você possui uma paper ou hardware wallet, ou seja seus Bitcoins não estão mais na exchange, você não paga mais taxas além da taxa de transferência aos mineradores que é escolhida a seu gosto.</p><p><b>Possibilidade de crescimento</b>. O Bitcoin está crescendo enormemente, assim como as inúmeras altcoins, moedas virtuais alternativas. É uma boa opção de investimento tanto para guardar e esperar crescer como realizar <em>day trade</em>, operações de curto prazo de compra e venda  ou venda e compra com o objetivo de ganhar na variação de preço de forma rápida com as oscilações, de criptomoedas. A vantagem sobre o day trade de ações é que pode ser feita a qualquer hora do dia.</p><h2>Como comprar Bitcoins?</h2><p>Para comprar Bitcoins, cadastre-se em uma casa de câmbio virtual (exchange), faça uma transferência bancária para a empresa e compre seus Bitcoins online pelo site da casa de câmbio. É possível comprar um Bitcoin inteiro ou uma fração da moeda (por exemplo: 0,541 Bitcoins).</p><p>Recomendamos que não deixe seus Bitcoins em exchanges, pois elas são sempre alvos de crackers. Estude como criar uma <em>paper wallet</em> ou compre uma carteira hardware como a <em>Ledger Nano S</em>.</p><p>Também é possível fazer compras P2P (comprar de outra pessoa). Recomendamos que peça referências do vendedor antes de comprar seus Bitcoins e outras moedas.</p><p>Fizemos uma matéria ensinando que ensina <a href="/bitcoin-hoje/comprar-barato/">como comprar Bitcoin</a>.</p><h2>Como vender Bitcoins?</h2><p>Uma das formas é trocar seus Bitcoins por real através de exchanges e pedir para que ela transfira para sua conta bancária.</p><p>Também é possível vender P2P (para outra pessoa) e ela transferirá para sua conta bancária ou pagará boletos para você. Lembre-se de pedir referências para o vendedor. A maioria possui páginas no Facebook ou posts em grupos com depoimentos de quem já fez negócios com eles.</p><h2>Como guardar seus Bitcoins com segurança?</h2><p>O Bitcoin em si é uma moeda muito segura. Para assegurar ainda mais, não deixe seus Bitcoins em exchanges, aprenda a criar sua paper wallet da melhor forma, guarde sua chave privada num cofre ou algo similar para que não encontrem facilmente ou entre contato com água ou algo que possa danificá-la. Também é recomendado comprar uma hardware wallet como a Ledger Nano S e guardá-la bem.</p><h2>O que é mineração de Bitcoin e como funciona?</h2><p>Minerar Bitcoins significa criar novos Bitcoins. Para minerar Bitcoins tende-se a usar computadores com alto poder de processamento em pool. Eles ficam ligados 24 horas por dia para minerar blocos. O pool que formar um bloco ganha uma recompensa em Bitcoins.</p><h2>Gráfico do histórico do Bitcoin</h2><p>Veja também o <a href="/bitcoin-hoje/grafico/">gráfico do Bitcoin</a>, seu histórico.</p><h2>Leia mais sobre o Bitcoin</h2><p>Veja <a href="/bitcoin-hoje/como-usar/">como usar Bitcoin</a> e <a href="/bitcoin-hoje/aceitam/">lojas e lugares que aceitam Bitcoins</a>.</p>
+  
+
+  
+
+  
+    
+
+    
+    <ul class="menu">
+      <li>
+        Veja também o <a href="https://bithoje.com/binance-coin-hoje/" target="_blank">Binance Coin Hoje</a>, <a href="https://bithoje.com/bitconnect-hoje/" target="_blank">BitConnect Hoje</a>, <a href="https://bithoje.com/pivx-hoje/" target="_blank">PIVX Hoje</a>.
+      </li>
+    </ul>
+    
+
+    <ul class="menu">
+      <li><a href="https://www.facebook.com/DolarHoje" target="_blank" rel="nofollow">Curta no Facebook</a></li>
+      <li><a href="https://twitter.com/DolarHoje" target="_blank" rel="nofollow">Siga no Twitter</a></li>
+      <li><a href="https://feedburner.google.com/fb/a/mailverify?uri=dolarhojepontocom&amp;loc=pt_BR" target="_blank" rel="nofollow">Receber via Email</a></li>
+    </ul>
+
+    <ul class="menu">
+      <li><a href="/em-seu-site/">Coloque as cotações em seu site</a></li>
+    </ul>
+
+    <ul class="menu">
+      <li>
+        <a href="mailto:eu@pedromenezes.com?subject=BitcoinHoje">contato</a>
+      </li>
+
+      <li>
+        <a href="/politicas/" rel="nofollow">políticas de privacidade e responsabilidade</a>
+      </li>
+
+      
+    </ul>
+
+    
+    <ul class="menu">
+      <li>
+        por <a href="http://pedromenezes.com" target="_blank" rel="nofollow">Pedro Menezes</a>
+      </li>
+    </ul>
+    
+  
+
+  
+    
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+    <!-- novo bloco responsivo do rodape hoje -->
+    <ins class="adsbygoogle rodape"
+        style="display:block;"
+        data-ad-client="ca-pub-2647271778569712"
+        data-ad-slot="3356980380"
+        ></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  
+</div>
+
+<script type="text/javascript">
+/* <![C@data[ */
+elEst = a2('estrangeiro');elNac = a2('nacional');spans = [elEst.parentElement, elNac.parentElement];isActivated = false;isMobile = (navigator.userAgent || navigator.vendor).toLowerCase().indexOf("mobile") > -1;function a0(fileLocation, async, onLoadFunction) {var script = document.createElement('script');script.src = fileLocation;script.async = async;document.getElementsByTagName('head')[0].appendChild(script);script.onload = onLoadFunction;}function a1() {var userAgent = navigator.userAgent || navigator.vendor;return (userAgent.toLowerCase().indexOf("mobile") == -1) && (userAgent.toLowerCase().indexOf("chrome") > -1);}function a2(id) {return document.getElementById(id);}function a3(number) {if (Math.abs(number) < 1.0) {var e = parseInt(number.toString().split('e-')[1]);if (e) {number *= Math.pow(10,e-1);number = '0.' + (new Array(e)).join('0') + number.toString().substring(2);}} else {var e = parseInt(number.toString().split('+')[1]);if (e > 20) {e -= 20;number /= Math.pow(10,e);number += (new Array(e+1)).join('0');}}return number;}function a4(str, token) {var parts = str.split(token);if (parts[1] === undefined) {return str;} else {return parts.slice(0,-1).join('') + token + parts.slice(-1);}}function a5(elDigitado, elDestino) {var formattedNumber = elDigitado.value;formattedNumber = formattedNumber.replace(/\.$/g, "");    formattedNumber = formattedNumber.replace(/\./g, ',');    formattedNumber = formattedNumber.replace(/[^0-9\.,]/g, "");    formattedNumber = formattedNumber.replace(/(\d+)\.(\d+),/g, "$1$2,");    formattedNumber = a4(formattedNumber, ',');elDigitado.value = formattedNumber;var txtDigitado = parseFloat(elDigitado.value.replace(',', '.'));if (isNaN(txtDigitado)) {elDestino.value = "0,00";return;}var result;if (elDigitado == elNac) {result = (txtDigitado /21067.280000);}else {result = (txtDigitado *21067.280000);}if (elDigitado == elNac) {result = result.toFixed(8);} else {result = result.toFixed(2);}result = a3(result) + "";result = result.replace(/\./, ',');elDestino.value = result;}function a6(){document.body.className = document.body.className.replace(/activated/g, "");}function a7(){if (!document.body.className.match(/activated/)) {document.body.className += " activated";}}function a8(el) {if (el.value.length > 10) {el.style.width = "6.7em";} else if (el.value.length < 3) {el.style.width = (el.value.length * 0.65) + "em";} else {el.style.width = (el.value.length * 0.65 - 0.3) + "em";}}function a8s() {a8(elEst);a8(elNac);}function aa() {elEst.style.width = elNac.style.width = 6.6+"em";}function ab() {a8s();}function ac(el) {if (!el.value.match(/\d/)) {el.value = "0,00";} else if (el.value.match(/^\d+(,\d*)?$/)) {if (el.id == 'nacional') {el.value = parseFloat(el.value.replace(',', '.')).toFixed(2).replace('.', ',');}}}elEst.onfocus = elNac.onfocus = function() {aa();a7();isActivated = true;var $this = this;window.setTimeout(function(){ $this.select(); }, 300);if (isMobile) {document.getElementById('cotacao').scrollIntoView();    }};elEst.onblur = elNac.onblur = function() {ac(this);    window.setTimeout(function(){if (!isActivated) {ab();a6();}}, 300);isActivated = false;};spans[0].onmouseover = spans[1].onmouseover = function() {if (!isActivated) {a7();}};spans[0].onmousedown = spans[1].onmousedown = spans[0].onclick = spans[1].onclick = function(event) {if (event.target.tagName != "INPUT") {var input = event.currentTarget.getElementsByTagName('input')[0];window.setTimeout(function(){input.select();input.focus()}, 100);}};spans[0].onmouseout = spans[1].onmouseout = function() {if (!isActivated) {a6();}};if (!isActivated) {a8s();}elEst.onkeyup = function(event) {if (!event) { event = window.event; }if (event.keyCode != 9) { a5(this, elNac); }  };elNac.onkeyup = function(event) {if (!event) { event = window.event; }if (event.keyCode != 9) { a5(this, elEst); }};if (a1()) {document.getElementById("aviso_chrome").className += " is";}if (isMobile) {document.body.className = 'mobile';} else {document.body.className = 'desktop';}document.getElementById('breadcrumb').getElementsByTagName('span')[0].innerHTML += '<svg xmlns="http://www.w3.org/2000/svg" class="arrow" width="14" height="14" viewBox="0 0 24 24"><path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/></svg>';(function(){a2('dropdown-content').className += ' ready';})();
+/* ]]> */
+</script>
+</body>
+</html>
